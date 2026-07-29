@@ -1,229 +1,457 @@
-# Software Architecture
+# System Architecture
 
-Project: Agro-Smart Hub
-
----
-
-# Overview
-
-The Agro-Smart Hub software consists of three major software components that work together to control the entire system.
-
-1. Android Controller
-2. Truck Controller Firmware
-3. Hub Controller Firmware
-
-The Android application acts as the Human-Machine Interface (HMI), while two Arduino Uno microcontrollers execute the control logic for the mobile truck and the stationary processing hub.
+**Project:** Agro-Smart Hub
 
 ---
 
-# Software Components
+# 1. Overview
 
-## Android Controller
+The Agro-Smart Hub is a modular mechatronic system designed to automate the sieving stage of cassava processing and transport the processed cassava toward the frying stage of Gari production.
 
-Responsibilities
+The system integrates:
 
-- Connect to the truck via Bluetooth.
-- Display user controls.
-- Generate control commands.
-- Send encoded messages.
-- Provide manual control of the complete system.
+- Mechanical engineering
+- Electrical engineering
+- Power electronics
+- Renewable energy
+- Embedded systems
+- Wireless communication
+- Mobile application development
+- Mobile robotics
 
-Development Platform
-
-- MIT App Inventor
+The complete prototype consists of several independently developed subsystems that were eventually integrated into a single operating system.
 
 ---
 
-## Truck Controller Firmware
+# 2. System Architecture
 
-Platform
+At a high level, the Agro-Smart Hub consists of two major groups:
 
-- Arduino Uno
+1. **Stationary processing hub**
+2. **Mobile transport truck**
 
-Responsibilities
+The stationary hub performs the material-processing operation while the truck receives, transports, and discharges the processed material.
 
-- Receive Bluetooth commands.
-- Parse incoming messages.
+---
+
+# 3. High-Level Control Architecture
+
+```text
+                    ANDROID CONTROLLER
+                           │
+                           │ Bluetooth
+                           ▼
+                  ┌──────────────────┐
+                  │  TRUCK CONTROLLER │
+                  │    Arduino Uno    │
+                  └────────┬─────────┘
+                           │
+                  ┌────────┴─────────┐
+                  │                  │
+            Truck Command       Hub Command
+                  │                  │
+                  ▼                  │
+          Truck Motors              │
+          Lift Mechanism             │
+                                     │
+                         Bluetooth Master
+                                     │
+                                     ▼
+                         Bluetooth Slave
+                                     │
+                                     ▼
+                           ┌────────────────┐
+                           │ HUB CONTROLLER │
+                           │   Arduino Uno  │
+                           └───────┬────────┘
+                                   │
+                    ┌──────────────┼──────────────┐
+                    │              │              │
+                    ▼              ▼              ▼
+              Slant Conveyor     Siever      Flat Conveyor
+```
+
+The truck therefore served as the communication gateway between the Android controller and the stationary hub.
+
+---
+
+# 4. Renewable Power Architecture
+
+The renewable power station supplied electrical energy to the project.
+
+```text
+                     SOLAR PANEL
+                          │
+                          ▼
+                        FUSE
+                          │
+                          ▼
+                  SCHOTTKY DIODE
+                          │
+                          ▼
+                    XL4016 CC/CV
+                          │
+                          ▼
+                       4S BMS
+                          │
+                          ▼
+                  LI-ION BATTERY
+                     4S5P
+                          │
+                          ▼
+                POWER DISTRIBUTION
+                          │
+              ┌───────────┼───────────┐
+              │           │           │
+              ▼           ▼           ▼
+          BUCK 5 V    BUCK 6 V    OTHER DC
+              │           │        LOADS
+              └───────────┴───────────┘
+```
+
+The power station consisted of:
+
+- Solar panel
+- Rechargeable battery pack
+- Battery management system
+- Charge-control stage
+- Protection components
+- Distribution towers
+- Buck converters
+
+Detailed power-system calculations are documented in:
+
+`Power_System_Design.md`
+
+---
+
+# 5. Renewable Power Station
+
+The renewable power station served as the electrical backbone of the Agro-Smart Hub.
+
+Its primary functions were:
+
+- Generate electrical energy from sunlight.
+- Store electrical energy in the battery pack.
+- Regulate electrical voltage.
+- Distribute power to the different subsystems.
+
+The system was designed to demonstrate how renewable energy could support localized automated agro-processing.
+
+---
+
+# 6. Embedded Control System
+
+Two Arduino Uno boards were used as the primary embedded controllers.
+
+## 6.1 Truck Controller
+
+The Arduino on the truck performed several functions:
+
+- Receive commands from the Android application.
+- Interpret incoming commands.
 - Control truck movement.
-- Control the lifting mechanism.
-- Control the discharge mechanism.
-- Forward hub commands to the Hub Controller.
+- Control the truck lifting mechanism.
+- Determine whether commands were intended for the truck or the stationary hub.
+- Forward hub commands to the stationary hub.
+
+The truck controller therefore performed both **local control** and **communication gateway** functions.
 
 ---
 
-## Hub Controller Firmware
+## 6.2 Hub Controller
 
-Platform
+The Arduino on the stationary hub controlled the processing mechanisms.
 
-- Arduino Uno
+Its responsibilities included:
 
-Responsibilities
-
-- Receive forwarded commands.
-- Control the siever.
+- Receive commands forwarded by the truck.
+- Control the slanting conveyor.
+- Control the sieving mechanism.
 - Control the flat conveyor.
-- Control the slant conveyor.
-- Operate relay outputs.
+- Activate the required switching devices.
 
 ---
 
-# Communication Flow
+# 7. Wireless Communication Architecture
 
-The communication process is illustrated below.
+The communication system operated through multiple Bluetooth modules.
 
+The communication sequence was:
+
+```text
 Android Application
-
-↓
-
+        │
+        │ Bluetooth
+        ▼
 Truck Bluetooth Module
-
-↓
-
+        │
+        ▼
 Truck Arduino
-
-↓
-
-If command is for Truck
-
-↓
-
-Execute locally
-
-OR
-
-If command is for Hub
-
-↓
-
-Forward through Master Bluetooth
-
-↓
-
-Slave Bluetooth
-
-↓
-
+        │
+        │ Software Serial
+        ▼
+Truck Bluetooth Master
+        │
+        │ Bluetooth
+        ▼
+Hub Bluetooth Slave
+        │
+        ▼
 Hub Arduino
+```
 
-↓
+The truck Arduino acted as the gateway.
 
-Execute command
+When a command was received, the truck controller determined whether the command was:
 
----
+- intended for the truck, or
+- intended for the stationary hub.
 
-# Command Protocol
+Truck commands were executed locally.
 
-Commands are transmitted as text strings.
-
-Examples
-
-T:START
-
-T:FWD
-
-T:BWD
-
-T:LEFT
-
-T:RIGHT
-
-T:LIFT
-
-T:LOWER
-
-T:DIS
-
-H:SIEVER_ON
-
-H:SIEVER_OFF
-
-H:FLAT_ON
-
-H:SLANT_ON
-
-Each message consists of a prefix identifying the destination subsystem followed by the command.
+Hub commands were forwarded to the stationary hub.
 
 ---
 
-# Message Parsing
+# 8. Mechanical System
 
-Each received message is divided into two sections using the colon (:) delimiter.
+The mechanical system consisted of the following major units:
 
-Example
+- Slanting conveyor
+- Sieving mechanism
+- Flat conveyor
+- Mobile truck
+- Truck carrier
+- Truck lifting mechanism
 
-T:FWD
-
-becomes
-
-Destination = T
-
-Command = FWD
-
-The firmware then determines whether the command should be executed locally or forwarded to the Hub Controller.
+Each unit performed a dedicated mechanical function.
 
 ---
 
-# Truck Firmware Workflow
+# 9. Slanting Conveyor
 
-1. Wait for Bluetooth message.
-2. Read complete command.
-3. Parse command.
-4. Verify system state.
-5. Execute truck command or forward hub command.
-6. Wait for next command.
+The slanting conveyor transported cassava from a lower loading area upward toward the sieving unit.
 
----
+Its primary function was to:
 
-# Hub Firmware Workflow
+1. Receive cassava.
+2. Move cassava upward.
+3. Discharge cassava into the siever.
 
-1. Wait for forwarded command.
-2. Read command.
-3. Match command.
-4. Activate or deactivate relay.
-5. Return to waiting state.
+This reduced the need for manual transfer of cassava into the sieving stage.
 
 ---
 
-# Error Handling
+# 10. Sieving Mechanism
 
-The firmware includes several simple error handling strategies.
+The sieving mechanism automated the separation of cassava particles before frying.
 
-- Ignore unknown commands.
-- Trim whitespace from received messages.
-- Use newline characters to separate consecutive commands.
-- Execute commands only after the system has been started.
+A gear motor drove the sieving mechanism in a back-and-forth motion.
 
----
+As cassava entered the siever:
 
-# Design Decisions
+- Fine particles passed through the sieving surface.
+- Coarser particles were retained or separated.
+- The fine material fell onto the flat conveyor beneath the siever.
 
-Several software design decisions improved system reliability.
-
-- Separate firmware for truck and hub.
-- Text-based command protocol.
-- Modular command routing.
-- SoftwareSerial communication between controllers.
-- Distributed control architecture.
+The mechanical construction was primarily achieved using locally available materials including plywood and ceiling board.
 
 ---
 
-# Future Improvements
+# 11. Flat Conveyor
 
-Future software enhancements may include:
+The flat conveyor was positioned beneath the sieving mechanism.
 
-- Command acknowledgements.
-- Error reporting.
-- Automatic reconnection.
-- Battery status reporting.
-- Sensor feedback.
-- Autonomous navigation.
-- Computer vision integration.
+Its purpose was to:
+
+1. Receive sieved cassava from the siever.
+2. Transport the material horizontally.
+3. Discharge the material into the mobile truck.
+
+The conveyor was constructed using:
+
+- Plywood supports
+- Wooden shafts
+- Bearings
+- PVC roller surfaces
+- Conveyor belt material
+
+The shafts were supported by bearings embedded within short wooden holders.
 
 ---
 
-# Media to Add Later
+# 12. Mobile Transport Truck
 
-- Android App screenshots.
-- App Inventor block diagrams.
-- Firmware flowcharts.
-- Communication sequence diagram.
+The truck was designed to receive processed cassava from the flat conveyor and transport it toward the frying area.
+
+The truck consisted of:
+
+- Structural frame
+- Cassava carrier
+- Wheels
+- Drive motors
+- Embedded controller
+- Bluetooth communication module
+- Motor driver
+- Carrier lifting mechanism
+
+The truck served two roles:
+
+1. Material transportation.
+2. Communication gateway for the stationary processing hub.
+
+---
+
+# 13. Truck Carrier Lifting Mechanism
+
+A lifting mechanism was incorporated into the truck to discharge cassava.
+
+The mechanism used:
+
+- Gear mechanism
+- Pinion
+- Rack
+- Linkage mechanism
+
+The rack-and-pinion arrangement converted rotary motor motion into linear motion, which was then used to actuate the linkage.
+
+The linkage raised one side of the cassava carrier, causing the material to discharge from the opposite side.
+
+The mechanism required several design iterations before it could reliably lift a loaded carrier.
+
+The final solution involved changing the geometry of the linkage and adding an additional gear, rack, and pinion stage to increase the available mechanical advantage.
+
+---
+
+# 14. Material Flow
+
+The intended material flow through the system was:
+
+```text
+Cassava Loading Area
+        │
+        ▼
+Slanting Conveyor
+        │
+        ▼
+     SIEVER
+        │
+        ▼
+  Fine Cassava
+        │
+        ▼
+Flat Conveyor
+        │
+        ▼
+Transport Truck
+        │
+        ▼
+Truck Transport
+        │
+        ▼
+Frying Area
+```
+
+This architecture automated the selected sieving and material-transfer stages of cassava processing.
+
+---
+
+# 15. Operational Sequence
+
+The complete system operates through the following sequence:
+
+1. The renewable power station is activated.
+2. The Android controller establishes communication with the truck.
+3. The operator sends the required command from the Android controller.
+4. The truck Arduino receives and interprets the command.
+5. If the command is intended for the truck, it is executed locally.
+6. If the command is intended for the stationary hub, it is forwarded to the hub controller.
+7. The slanting conveyor transports cassava to the siever.
+8. The siever separates the cassava particles.
+9. Fine cassava falls onto the flat conveyor.
+10. The flat conveyor transports the sieved cassava into the truck.
+11. The truck transports the cassava toward the frying area.
+12. The lifting mechanism raises the truck carrier.
+13. The processed cassava is discharged.
+
+---
+
+# 16. Modular Design Philosophy
+
+The Agro-Smart Hub was developed using a modular engineering approach.
+
+Rather than attempting to construct the entire system simultaneously, the project was divided into individual subsystems.
+
+These included:
+
+- Renewable power station
+- Battery pack
+- Slanting conveyor
+- Siever
+- Flat conveyor
+- Truck
+- Truck lifting mechanism
+- Embedded control
+- Wireless communication
+- Android controller
+
+Each unit could be developed and tested independently before integration.
+
+This approach provided several advantages:
+
+- Simplified debugging
+- Reduced system complexity
+- Allowed students to focus on individual engineering problems
+- Enabled independent subsystem testing
+- Made troubleshooting easier
+- Reduced the risk of changing the entire system when one subsystem failed
+
+---
+
+# 17. Engineering Disciplines Integrated
+
+The final prototype demonstrated the integration of several engineering disciplines.
+
+| Discipline             | Application                                             |
+| ---------------------- | ------------------------------------------------------- |
+| Mechanical Engineering | Conveyors, siever, truck, linkage and lifting mechanism |
+| Electrical Engineering | Power distribution and electrical loads                 |
+| Power Electronics      | Buck conversion and battery charging                    |
+| Embedded Systems       | Arduino-based control                                   |
+| Wireless Communication | Bluetooth command transmission                          |
+| Mobile Development     | Android controller                                      |
+| Renewable Energy       | Solar-powered electrical system                         |
+| Systems Engineering    | Subsystem integration and testing                       |
+
+---
+
+# 18. Key Design Characteristics
+
+The Agro-Smart Hub was characterized by:
+
+- Modular construction
+- Renewable-energy power
+- Wireless control
+- Embedded control
+- Mobile material transportation
+- Automated cassava sieving
+- Localized fabrication
+- Low-cost construction
+- Student participation
+- Multi-disciplinary engineering integration
+
+---
+
+# 19. Related Documentation
+
+Detailed engineering information is documented in the following project documents:
+
+- `Power_System_Design.md`
+- `System_Requirements_Specification.md`
+- `Engineering_Design_History.md`
+- `Software_Architecture.md`
+- `Test_Report.md`
+- `Bill_of_Materials.md`
+- `Engineering_Reflection.md`
+- `Competition_Journey.md`
