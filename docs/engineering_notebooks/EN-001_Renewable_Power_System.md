@@ -121,7 +121,7 @@ The combined demand was then used to estimate the required battery capacity.
 
 > **Note:** Detailed power calculations are documented separately in `calculations/Power_Budget.md`.
 
-See vdeo here --> ![Load Sizing](../../assets/engineering_notebooks/1. Load Sizing.png)
+See image here --> ![Load Sizing](../../assets/Battery pack/1. Load Sizing.png)
 
 # Voltage Regulation
 
@@ -130,7 +130,7 @@ Different components required different operating voltages.
 Buck converters were introduced to regulate the battery voltage before supplying individual subsystems.
 
 This improved electrical safety and reduced the risk of over-voltage damage.
-See vdeo here --> ![1. Solar power station diagram](../../assets/Power station/1. Solar power station diagram.png)
+See image here --> ![Solar power station diagram](../../assets/Power station/1. Solar power station diagram.png)
 
 ---
 
