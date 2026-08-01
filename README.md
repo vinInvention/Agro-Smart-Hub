@@ -10,7 +10,7 @@
 
 > **Insert a high-quality photograph of the complete Agro-Smart Hub prototype here.**
 
-<!-- Hero Image -->
+![Agro-Smart Hub Prototype](assets/3. Entire setupb.PNG)
 
 ---
 
