@@ -36,32 +36,46 @@ The Communication System was designed to:
 # Communication Architecture
 
 ```
-                 Android Application
+
+
+                ANDROID CONTROLLER
                          │
-                 Bluetooth Connection
+                    Bluetooth
                          │
                          ▼
-            HC-05 #1 (Truck Receiver)
+                ┌─────────────────┐
+                │ HC-05 — Slave 1 │
+                │  Truck Controller│
+                └────────┬────────┘
+                         │
+                  Arduino UNO
+                  TRUCK CONTROLLER
+                         │
+                    SoftwareSerial
                          │
                          ▼
-                Truck Arduino Uno
-                 /              \
-                /                \
-     Truck Commands        Hub Commands
-          │                      │
-          ▼                      ▼
- Execute Locally       HC-05 #2 (Master)
-                               │
-                     Bluetooth Connection
-                               │
-                               ▼
-                     HC-05 #3 (Slave)
-                               │
-                               ▼
-                       Hub Arduino Uno
-                               │
-                               ▼
-          Slant Conveyor • Siever • Flat Conveyor • Standby LED • Unit active LED
+                ┌─────────────────┐
+                │ HC-05 — Master  │
+                │  Truck Controller│
+                └────────┬────────┘
+                         │
+                    Bluetooth
+                         │
+                         ▼
+                ┌─────────────────┐
+                │ HC-05 — Slave 2 │
+                │  Hub Controller │
+                └────────┬────────┘
+                         │
+                    SoftwareSerial
+                         │
+                         ▼
+                  Arduino UNO
+                  HUB CONTROLLER
+                         │
+          ┌──────────────┼──────────────┐
+          ▼              ▼              ▼
+     Slant Conveyor   Flat Conveyor    Siever
 ```
 
 ---
