@@ -8,9 +8,7 @@
 
 ## 📸 Project Showcase
 
-> **Insert a high-quality photograph of the complete Agro-Smart Hub prototype here.**
-
-![Agro-Smart Hub Prototype](assets/3.%20Entire%20setupb.png)
+> ![Agro-Smart Hub Prototype](assets/3.%20Entire%20setupb.png)
 
 ---
 
@@ -76,9 +74,7 @@ Together, these subsystems receive cassava, sieve it, transport the processed ma
 
 # System Architecture
 
-> **Insert the complete system architecture diagram here.**
-
-<!-- System Architecture Diagram -->
+> ![Agro-Smart Hub Prototype](assets/System%20Architectural%20diagram.png)
 
 ---
 
@@ -88,7 +84,7 @@ Together, these subsystems receive cassava, sieve it, transport the processed ma
 
 Provides electrical power to the entire Agro-Smart Hub using a rechargeable battery system supplied by solar energy.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/Power%20station/6.%20Power%20station%20working.png)
 
 ---
 
@@ -96,7 +92,7 @@ Provides electrical power to the entire Agro-Smart Hub using a rechargeable batt
 
 Stores electrical energy for the project and distributes regulated power to the different subsystems through buck converters.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/Battery%20pack/4a.%20Battery%20pack.mp4)
 
 ---
 
@@ -104,7 +100,7 @@ Stores electrical energy for the project and distributes regulated power to the 
 
 Transfers cassava upward into the sieving system.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/Slanting%20Conveyor/Slant%20Conveyor.mp4)
 
 ---
 
@@ -112,7 +108,7 @@ Transfers cassava upward into the sieving system.
 
 Separates fine cassava particles from coarse particles using a reciprocating mechanical motion.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/Sieving%20hub/1.%20Unit%20testing%20for%20Siever.mp4)
 
 ---
 
@@ -120,7 +116,7 @@ Separates fine cassava particles from coarse particles using a reciprocating mec
 
 Receives sieved cassava and transports it into the collection truck.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/Flat%20conveyor%20with%20Siever%20construction/Unit%20testing%20flat%20conveyor.mp4)
 
 ---
 
@@ -128,7 +124,7 @@ Receives sieved cassava and transports it into the collection truck.
 
 Receives processed cassava, transports it to the discharge area, and empties its carrier using a custom lifting mechanism.
 
-📷 _Insert photograph_
+> ![Agro-Smart Hub Prototype](assets/truck/13.%20truck%20drive%20turn%20lift%20test.mp4)
 
 ---
 
@@ -136,7 +132,7 @@ Receives processed cassava, transports it to the discharge area, and empties its
 
 Provides a wireless Human-Machine Interface (HMI) for controlling the complete system.
 
-📷 _Insert application screenshots_
+> ![Agro-Smart Hub Prototype](assets/Android%20app%20interface/1.%20Android%20app%20interface.jpeg)
 
 ---
 
@@ -181,6 +177,8 @@ Hub Arduino
         ▼
 Execute Hub Commands
 ```
+
+> ![Agro-Smart Hub Prototype](assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.png)
 
 ---
 
@@ -227,7 +225,6 @@ The complete engineering documentation for this project is available in the **do
 | Software Architecture               | **Add Link** |
 | Test Report                         | **Add Link** |
 | Manufacturing Drawings & Dimensions | **Add Link** |
-| User Manual                         | **Add Link** |
 | Engineering Reflection              | **Add Link** |
 | Competition Journey                 | **Add Link** |
 
