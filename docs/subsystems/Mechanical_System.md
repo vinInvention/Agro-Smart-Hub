@@ -65,7 +65,7 @@ Frying Area
 
 ---
 
-> **Hub Power Distribution Wiring** > ![Hub Power Distribution](../../assets/Sieving%20hub/2.%20Cassava%20Sieving%20Hub%20power%20Distribution%20Wiring%20Diagram.PNG)
+> **Hub Power Distribution Wiring** > ![Hub Power Distribution](../../assets/2.%20Cassava%20Sieving%20Hub%20power Distribution%20Wiring%20Diagram.png)
 
 ---
 
