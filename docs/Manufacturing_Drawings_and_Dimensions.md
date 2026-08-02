@@ -19,9 +19,9 @@ The drawings referenced below illustrate the construction and layout of the majo
 | Drawing                 | Description                | Location                                                                                                    |
 | ----------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | Renewable Power Station | Power station layout       | ![Power Station](../assets/Power%20station/1.%20Solar%20power%20station%20diagram.png)                      |
-| Truck Controller        | Truck wiring and control   | ![Power Station](../assets/truck/1.%20Truck%20system%20wiring.PNG)                                          |
-| Hub Controller          | Hub wiring and control     | ![Sieving Hub Wiring](../assets/Sieving%20hub/1.%20Cassava%20Sieving%20Hub%20System%20Wiring%20Diagram.PNG) |
-| Bluetooth Network       | Communication architecture | ![Bluetooth](../assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.PNG)  |
+| Truck Controller        | Truck wiring and control   | ![Truck System Wiring](../assets/truck/1.%20Truck%20system%20wiring.png)                                    |
+| Hub Controller          | Hub wiring and control     | ![Sieving Hub Wiring](../assets/Sieving%20hub/1.%20Cassava%20Sieving%20Hub%20System%20Wiring%20Diagram.png) |
+| Bluetooth Network       | Communication architecture | ![Bluetooth](../assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.png)  |
 
 ---
 
