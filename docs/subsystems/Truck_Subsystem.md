@@ -75,6 +75,20 @@ Control      │
         Hub Arduino
 ```
 
+> **Truck Contrller System Wiring** > ![Truck Controller System Wirirng](assets/truck/2.%20Truck%20Power%20distribution%20wiring.png)
+
+---
+
+> **Truck Controller Pinouts**
+
+> ![Truck Controller System Wirirng](assets/truck/3.%20Truck%20controller%20pinouts.png)
+
+---
+
+> **Truck Power Distribution Wiring** > ![Truck Controller System Wirirng](assets/truck/2.%20Truck%20Power%20distribution%20wiring.png)
+
+---
+
 The Arduino examines each incoming command. If the command is intended for the truck, it executes it locally. If it is intended for the hub, it forwards the command through the second Bluetooth module.
 
 ---

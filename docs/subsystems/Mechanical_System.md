@@ -55,6 +55,20 @@ Mobile Truck
 Frying Area
 ```
 
+> **Cassava Sieving Hub Wiring** > ![Cassava Hub System Wirirng](../../assets/Sieving%20hub/1.%20Cassava%20Sieving%20Hub%20System%20Wiring%20Diagram.png)
+
+---
+
+> **Hub Controller Pinouts**
+
+> ![Hub Controller Pinouts](../../assets/Sieving%20hub/3.%20Hub%20controller%20pinouts.png)
+
+---
+
+> **Truck Power Distribution Wiring** > ![Truck Controller System Wirirng](../../assets/Sieving%20hub/2.%20Cassava%20SIeving%20Hub%20power%20Distribution%20Wiring%20Diagram.png)
+
+---
+
 ---
 
 # Mechanical Design Principles
@@ -83,7 +97,7 @@ The prototype was constructed primarily from materials that were affordable and 
 | Plywood                       | Structural frames   |
 | Ceiling board                 | Body panels         |
 | PVC pipe                      | Conveyor rollers    |
-| Steel shafts                  | Rotating members    |
+| Wooden shafts                 | Rotating members    |
 | Bearings                      | Shaft support       |
 | Timing belts / Conveyor belts | Material transport  |
 | Fasteners                     | Mechanical assembly |
