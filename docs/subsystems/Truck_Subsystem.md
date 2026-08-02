@@ -206,3 +206,13 @@ Developing the Truck Subsystem demonstrated the importance of considering mechan
 Several successful solutions—including the communication redesign, software improvements, and linkage modifications—were achieved through iterative testing rather than replacing hardware.
 
 The truck became both the transportation platform and the communication gateway, making it one of the most technically significant subsystems within the Agro-Smart Hub.
+
+## Building the Agro-Smart Hub
+
+The project was developed through hands-on engineering, experimentation, fabrication, programming, and testing with the student team.
+
+![Team fabrication](../../assets/truck/5.%20Joining%20parts%20together.jpg)
+
+![Team working on the prototype](../../assets/truck/6.%20Joining%20beams%20together.jpg)
+
+![Team building the flat conveyor](../../assets/Flat%20conveyor%20with%20Siever%20construction/6.%20Building%20Flat%20conveyor.jpg)

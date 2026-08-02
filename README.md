@@ -350,7 +350,9 @@ Future versions of Agro-Smart Hub may include:
 
 This project would not have been possible without the enthusiasm and commitment of the students who participated throughout the design, construction, testing, and presentation of the Agro-Smart Hub, the school (Royal Dutch School - Ago Lagos state) which provided us the space and sponsored the project finacially.
 
-Their curiosity, teamwork, and willingness to learn transformed this project into both an engineering achievement and an educational experience.
+The curiosity of these students, teamwork, and willingness to learn transformed this project into both an engineering achievement and an educational experience.
+
+![Team working on the power station](assets/Power%20station/2a.%20Constructing%20the%20power%20grid.jpg)
 
 ---
 
