@@ -26,6 +26,14 @@ Rather than building isolated subsystems, the project demonstrates how multiple 
 
 ---
 
+## Building the Agro-Smart Hub
+
+The Agro-Smart Hub was developed through hands-on experimentation, fabrication, programming, testing, and system integration with student team members.
+
+![Students building the Agro-Smart Hub](assets/truck/4.%20Cuttingbeam%20for%20truck%20frame.jpg)
+
+_Hands-on fabrication and development of the Agro-Smart Hub with the student team._
+
 # The Problem
 
 Traditional cassava processing involves several manual operations before gari is produced.
