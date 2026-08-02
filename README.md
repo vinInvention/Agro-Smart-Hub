@@ -265,15 +265,41 @@ Agro-Smart-Hub/
 
 ---
 
-> ![Flat Conveyor Unit](http://tiny.cc/wur7101)
+> [Flat Conveyor Unit Test](http://tiny.cc/wur7101)
 
 ---
 
-> **Insert YouTube or Google Drive video link**
+> **Testing the Siever**
 
-### Android Controller Demonstration
+---
 
-> **Insert Video Link**
+> [Siever Unit Test](http://tiny.cc/v4s7101)
+
+---
+
+> **First Integration Testing (Hub and Power System Test)**
+
+---
+
+> [Hub and Power System Integration Test](http://tiny.cc/f5s7101)
+
+---
+
+> **Truck testing**
+
+---
+
+> [Truck Unit Test](http://tiny.cc/m5s7101)
+
+---
+
+> **Android Controller testing**
+
+---
+
+> [Android Controller Unit Test](http://tiny.cc/66s7101)
+
+---
 
 ### Competition Demonstration
 
