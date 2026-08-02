@@ -98,7 +98,7 @@ Stores electrical energy for the project and distributes regulated power to the 
 
 > ![Agro-Smart Hub Battery Pack](assets/Battery%20pack/Battery%20Pack.PNG)
 
-Read more about these Renewable Power subsystems here >> ![Renewable Power Subsystems](docs/subsystems/Renewable_Power_System.md)
+Read more about these Renewable Power subsystems here >> [Renewable Power Subsystems](docs/subsystems/Renewable_Power_System.md)
 
 ---
 
@@ -126,7 +126,7 @@ Receives sieved cassava and transports it into the collection truck.
 
 ---
 
-Read more about these mechanical subsystems here >> ![Mechanical Subsystems](docs/subsystems/Mechanical_System.md)
+Read more about these mechanical subsystems here >> [Mechanical Subsystems](docs/subsystems/Mechanical_System.md)
 
 ---
 
@@ -140,7 +140,7 @@ Receives processed cassava, transports it to the discharge area, and empties its
 
 > ![Agro-Smart Hub Truck](assets/truck/11.%20Final%20outcome.jpeg)
 
-Read more about the Truck and Lift mechanism subsystems here >> ![Truck Subsystem](docs/subsystems/Truck_Subsystem.md)
+Read more about the Truck and Lift mechanism subsystems here >> [Truck Subsystem](docs/subsystems/Truck_Subsystem.md)
 
 ---
 
@@ -150,7 +150,7 @@ Provides a wireless Human-Machine Interface (HMI) for controlling the complete s
 
 > ![Agro-Smart Hub Prototype](assets/Android%20app%20interface/1.%20Android%20app%20interface.jpeg)
 
-Read more about the Android Controller subsystem here >> ![Android Controller Subsystem](docs/subsystems/Android_Controller.md)
+Read more about the Android Controller subsystem here >> [Android Controller Subsystem](docs/subsystems/Android_Controller.md)
 
 ---
 
@@ -196,7 +196,7 @@ Execute Hub Commands
 
 > ![Agro-Smart Hub Communication Architecture](assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.png)
 
-Read more about the Communication subsystem here >> ![Communication Subsystem](docs/subsystems/Communication_System.md)
+Read more about the Communication subsystem here >> [Communication Subsystem](docs/subsystems/Communication_System.md)
 
 ---
 
@@ -232,20 +232,20 @@ Read more about the Communication subsystem here >> ![Communication Subsystem](d
 
 The complete engineering documentation for this project is available in the **docs** directory.
 
-| Document                            | Link                                                                                            |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Engineering Design History          | ![Engineering design history](docs/02_Engineering_Design_History/Engineering_Design_History.md) |
-| System Requirements Specification   | ![System Requirements](docs/Requirements/System_Requirements_Specification.md)                  |
-| System Architecture                 | ![System Architecture](docs/Software_Architecture.md)                                           |
-| Engineering Design Decisions        | ![Engineering Decisions](docs/02_Engineering_Design_History/Engineering_Design_History.md)      |
-| Engineering Notebook Series         | ![Engineering Design History](docs/engineering_notebooks/)                                      |
-| Bill of Materials                   | ![Bill of Materials](docs/Bill_of_Materials.md)                                                 |
-| Test Report                         | ![Test Report](docs/Test_Report.md)                                                             |
-| Manufacturing Drawings & Dimensions | ![Manufacturing Drawings](docs/Manufacturing_Drawings_and_Dimensions.md)                        |
-| Engineering Reflection              | ![Engineering Reflection](docs/Engineering_Reflection.md)                                       |
-| Competition Journey                 | ![Competition Journey](docs/Competition_Journey.md)                                             |
-| Bluetooth Communication Setup       | ![Bluetooth Setup](assets/Communication/Setting%20up%20master%20and%20slave%20Bluetooth.pdf)    |
-| Power System Design                 | ![Power requirement](docs/Power_System_Design.md)                                               |
+| Document                            | Link                                                                                           |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Engineering Design History          | [Engineering design history](docs/02_Engineering_Design_History/Engineering_Design_History.md) |
+| System Requirements Specification   | [System Requirements](docs/Requirements/System_Requirements_Specification.md)                  |
+| System Architecture                 | [System Architecture](docs/Software_Architecture.md)                                           |
+| Engineering Design Decisions        | [Engineering Decisions](docs/02_Engineering_Design_History/Engineering_Design_History.md)      |
+| Engineering Notebook Series         | [Engineering Design History](docs/engineering_notebooks/)                                      |
+| Bill of Materials                   | [Bill of Materials](docs/Bill_of_Materials.md)                                                 |
+| Test Report                         | [Test Report](docs/Test_Report.md)                                                             |
+| Manufacturing Drawings & Dimensions | [Manufacturing Drawings](docs/Manufacturing_Drawings_and_Dimensions.md)                        |
+| Engineering Reflection              | [Engineering Reflection](docs/Engineering_Reflection.md)                                       |
+| Competition Journey                 | [Competition Journey](docs/Competition_Journey.md)                                             |
+| Bluetooth Communication Setup       | [Bluetooth Setup](assets/Communication/Setting%20up%20master%20and%20slave%20Bluetooth.pdf)    |
+| Power System Design                 | [Power requirement](docs/Power_System_Design.md)                                               |
 
 ---
 
