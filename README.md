@@ -270,6 +270,17 @@ Agro-Smart-Hub/
 │   ├── simulations/
 │   └── truck/
 │
+│src/
+├── truck_controller/
+│   └── Truck_Controller.ino
+│
+├── hub_controller/
+│   └── Hub_Controller.ino
+│
+│
+├── android_app/
+│    └── AgroSmartHub_Controller.aia
+│
 ├── docs/
 │
 ├── software/
