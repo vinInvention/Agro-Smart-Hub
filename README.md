@@ -100,7 +100,7 @@ Stores electrical energy for the project and distributes regulated power to the 
 
 Transfers cassava upward into the sieving system.
 
-> ![Agro-Smart Hub Slant conveyor](assets/Slanting%20Conveyor/2a.%20Sieving%20hub.png)
+> ![Agro-Smart Hub Slant conveyor](assets/Slanting%20Conveyor/2a.%20Sieving%20hub.PNG)
 
 ---
 
@@ -108,7 +108,7 @@ Transfers cassava upward into the sieving system.
 
 Separates fine cassava particles from coarse particles using a reciprocating mechanical motion.
 
-> ![Agro-Smart Hub Siever](assets/Sieving%20hub/Siever.png)
+> ![Agro-Smart Hub Siever](assets/Sieving%20hub/Siever.PNG)
 
 ---
 
@@ -124,7 +124,7 @@ Receives sieved cassava and transports it into the collection truck.
 
 Receives processed cassava, transports it to the discharge area, and empties its carrier using a custom lifting mechanism.
 
-> ![Agro-Smart Hub Truck under construction](assets/truck/10.%20Mechanism%20and%20wiring.png)
+> ![Agro-Smart Hub Truck under construction](assets/truck/10.%20Mechanism%20and%20wiring.PNG)
 
 ---
 
