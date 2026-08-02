@@ -271,10 +271,10 @@ Agro-Smart-Hub/
 │   └── truck/
 │
 │src/
-├── truck_controller/
+├── Industrial_truck_controller/
 │   └── Truck_Controller.ino
 │
-├── hub_controller/
+├── Industrial_hub_controller/
 │   └── Hub_Controller.ino
 │
 │
