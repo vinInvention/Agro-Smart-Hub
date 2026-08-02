@@ -61,11 +61,11 @@ Frying Area
 
 > **Hub Controller Pinouts**
 
-> ![Hub Controller Pinouts](../../assets/Sieving%20hub/3.%20Hub%20controller%20pinouts.png)
+> ![Hub Controller Pinouts](../../assets/Sieving%20hub/3.%20Hub%20controller%20pinouts.PNG)
 
 ---
 
-> **Truck Power Distribution Wiring** > ![Truck Controller System Wirirng](../../assets/Sieving%20hub/2.%20Cassava%20SIeving%20Hub%20power%20Distribution%20Wiring%20Diagram.png)
+> **Truck Power Distribution Wiring** > ![Truck Controller System Wirirng](../../assets/Sieving%20hub/2.%20Cassava%20SIeving%20Hub%20power%20Distribution%20Wiring%20Diagram.PNG)
 
 ---
 
