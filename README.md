@@ -272,10 +272,10 @@ Agro-Smart-Hub/
 │
 │src/
 ├── Industrial_truck_controller/
-│   └── Truck_Controller.ino
+│   └── Industrial_truck_controller.ino
 │
 ├── Industrial_hub_controller/
-│   └── Hub_Controller.ino
+│   └── Industrial_hub_controller.ino
 │
 │
 ├── android_app/
