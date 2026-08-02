@@ -116,7 +116,7 @@ Separates fine cassava particles from coarse particles using a reciprocating mec
 
 Receives sieved cassava and transports it into the collection truck.
 
-> ![Agro-Smart Hub Flat Conveyor](assets/Flat%20conveyor%20with%20Siever%20construction/6.%20Building%20Flat%20conveyor.jpg)
+> [Agro-Smart Hub Flat Conveyor](http://tiny.cc/wur7101)
 
 ---
 
