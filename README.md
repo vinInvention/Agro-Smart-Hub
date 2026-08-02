@@ -279,7 +279,7 @@ Agro-Smart-Hub/
 │
 │
 ├── android_app/
-│    └── AgroSmartHub_Controller.aia
+│    └── Industrial_Controller.aia
 │
 ├── docs/
 │
