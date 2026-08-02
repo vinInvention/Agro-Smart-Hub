@@ -84,7 +84,7 @@ Together, these subsystems receive cassava, sieve it, transport the processed ma
 
 Provides electrical power to the entire Agro-Smart Hub using a rechargeable battery system supplied by solar energy.
 
-> ![Agro-Smart Hub Renewable Power Station](assets/Power%20station/6.%20Power%20station%20working.png)
+> ![Agro-Smart Hub Renewable Power Station](assets/Power%20station/6.%20Power%20station%20working.PNG)
 
 ---
 
@@ -92,7 +92,7 @@ Provides electrical power to the entire Agro-Smart Hub using a rechargeable batt
 
 Stores electrical energy for the project and distributes regulated power to the different subsystems through buck converters.
 
-> ![Agro-Smart Hub Battery Pack](assets/Battery%20pack/Battery%20Pack.png)
+> ![Agro-Smart Hub Battery Pack](assets/Battery%20pack/Battery%20Pack.PNG)
 
 ---
 
@@ -116,7 +116,7 @@ Separates fine cassava particles from coarse particles using a reciprocating mec
 
 Receives sieved cassava and transports it into the collection truck.
 
-> [Agro-Smart Hub Flat Conveyor](http://tiny.cc/wur7101)
+> ![Agro-Smart Hub Flat Conveyor](assets/Flat%20conveyor%20with%20Siever%20construction/Flat%20conveyor.jpeg)
 
 ---
 
@@ -150,8 +150,6 @@ The software consists of three primary components:
 
 The Android application communicates with the truck controller through Bluetooth. The truck controller executes local commands and forwards hub commands to the stationary processing hub using a second Bluetooth communication link.
 
-> **Insert Software Architecture Diagram**
-
 ---
 
 # Communication Architecture
@@ -182,7 +180,7 @@ Hub Arduino
 Execute Hub Commands
 ```
 
-> ![Agro-Smart Hub Prototype](assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.png)
+> ![Agro-Smart Hub Communication Architecture](assets/Communication/Complete%20controller%20communication%20architechtural%20diagram.png)
 
 ---
 
@@ -218,19 +216,19 @@ Execute Hub Commands
 
 The complete engineering documentation for this project is available in the **docs** directory.
 
-| Document                            | Link         |
-| ----------------------------------- | ------------ |
-| Engineering Design History          | **Add Link** |
-| System Requirements Specification   | **Add Link** |
-| System Architecture                 | **Add Link** |
-| Engineering Design Decisions        | **Add Link** |
-| Engineering Notebook Series         | **Add Link** |
-| Bill of Materials                   | **Add Link** |
-| Software Architecture               | **Add Link** |
-| Test Report                         | **Add Link** |
-| Manufacturing Drawings & Dimensions | **Add Link** |
-| Engineering Reflection              | **Add Link** |
-| Competition Journey                 | **Add Link** |
+| Document                            | Link                                                                                            |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Engineering Design History          | ![Engineering design history](docs/02_Engineering_Design_History/Engineering_Design_History.md) |
+| System Requirements Specification   | **Add Link**                                                                                    |
+| System Architecture                 | **Add Link**                                                                                    |
+| Engineering Design Decisions        | **Add Link**                                                                                    |
+| Engineering Notebook Series         | **Add Link**                                                                                    |
+| Bill of Materials                   | **Add Link**                                                                                    |
+| Software Architecture               | **Add Link**                                                                                    |
+| Test Report                         | **Add Link**                                                                                    |
+| Manufacturing Drawings & Dimensions | **Add Link**                                                                                    |
+| Engineering Reflection              | **Add Link**                                                                                    |
+| Competition Journey                 | **Add Link**                                                                                    |
 
 ---
 
