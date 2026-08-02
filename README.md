@@ -8,7 +8,11 @@
 
 ## 📸 Project Showcase
 
-> ![Agro-Smart Hub Prototype](assets/3.%20Entire%20setupb.png)
+> ![Agro-Smart Hub Prototype Diagram](assets/1.%20Complete%20system%20diagram.jpg)
+
+---
+
+> ![Agro-Smart Hub Complete Sytem](assets/3.%20Entire%20setupb.png)
 
 ---
 
@@ -223,11 +227,11 @@ The complete engineering documentation for this project is available in the **do
 | System Architecture                 | ![System Architecture](docs/Software_Architecture.md)                                           |
 | Engineering Design Decisions        | ![Engineering Decisions](docs/02_Engineering_Design_History/Engineering_Design_History.md)      |
 | Engineering Notebook Series         | ![Engineering Design History](docs/engineering_notebooks/)                                      |
-| Bill of Materials                   | ![Engineering Notes](docs/Bill_of_Materials.md)                                                 |
-| Test Report                         | ![Engineering Notes](docs/Test_Report.md)                                                       |
-| Manufacturing Drawings & Dimensions | **Add Link**                                                                                    |
-| Engineering Reflection              | **Add Link**                                                                                    |
-| Competition Journey                 | **Add Link**                                                                                    |
+| Bill of Materials                   | ![Bill of Materials](docs/Bill_of_Materials.md)                                                 |
+| Test Report                         | ![Test Report](docs/Test_Report.md)                                                             |
+| Manufacturing Drawings & Dimensions | ![Manufacturing Drawings](docs/Manufacturing_Drawings_and_Dimensions.md)                        |
+| Engineering Reflection              | ![Engineering Reflection](docs/Engineering_Reflection.md)                                       |
+| Competition Journey                 | ![Competition Journey](docs/Competition_Journey.md)                                             |
 
 ---
 
@@ -256,6 +260,14 @@ Agro-Smart-Hub/
 # Demonstration
 
 ### Prototype Demonstration
+
+> **Testing the Flat Conveyor Unit**
+
+---
+
+> ![Flat Conveyor Unit](http://tiny.cc/wur7101)
+
+---
 
 > **Insert YouTube or Google Drive video link**
 
