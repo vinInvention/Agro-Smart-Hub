@@ -75,7 +75,7 @@ Control      │
         Hub Arduino
 ```
 
-> **Truck Contrller System Wiring** > ![Truck Controller System Wirirng](../../assets/truck/2.%20Truck%20Power%20distribution%20wiring.PNG)
+> **Truck System Wiring** > ![Truck Controller System Wirirng](../../assets/truck/1.%20Truck%20system%20wiring.png)
 
 ---
 
