@@ -244,7 +244,7 @@ The complete engineering documentation for this project is available in the **do
 | Manufacturing Drawings & Dimensions | ![Manufacturing Drawings](docs/Manufacturing_Drawings_and_Dimensions.md)                        |
 | Engineering Reflection              | ![Engineering Reflection](docs/Engineering_Reflection.md)                                       |
 | Competition Journey                 | ![Competition Journey](docs/Competition_Journey.md)                                             |
-| Bluetooth Communication Setup       | ![Bluetooth Setup](assets/Setting%20up%20master%20and%20slave%20Bluetooth.PDF)                  |
+| Bluetooth Communication Setup       | ![Bluetooth Setup](assets/Communication/Setting%20up%20master%20and%20slave%20Bluetooth.PDF)    |
 | Power System Design                 | ![Power requirement](docs/Power_System_Design.md)                                               |
 
 ---
