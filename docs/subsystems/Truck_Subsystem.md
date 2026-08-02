@@ -81,7 +81,7 @@ Control      │
 
 > **Truck Controller Pinouts**
 
-> ![Truck Controller System Wirirng](../../assets/truck/3.%20Truck%20controller%20pinouts.PNG)
+> ![Truck Controller System Wirirng](../../assets/truck/3.%20Truck%20controller%20pinouts.png)
 
 ---
 
